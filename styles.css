@@ -1,0 +1,139 @@
+/* Base styles for body */
+body {
+    font-family: Arial, sans-serif;
+    background-image:url("/Users/shrutikrishnapagadala/Desktop/test/bg_img.jpg");
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Container styles */
+  .container {
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Header styles */
+  .header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .header img {
+    max-width: 100px;
+  }
+  
+  .header h1 {
+    font-size: 24px;
+    color: #000;
+    margin: 10px 0;
+  }
+  
+  /* Form styles */
+  form {
+    margin: 0;
+  }
+  
+  .input-group {
+    margin-bottom: 15px;
+  }
+  
+  .input-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .input-group input[type="email"],
+  .input-group input[type="password"],
+  .input-group input[type="text"],
+  .input-group input[type="date"],
+  .input-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  /* Button styles */
+  button,
+  input[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    background-color: #0056b3;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button:hover,
+  input[type="submit"]:hover {
+    background-color: #004494;
+  }
+  
+  /* Link styles */
+  a {
+    color: #0056b3;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Utility classes */
+  .text-center {
+    text-align: center;
+  }
+  
+  .mt-20 {
+    margin-top: 20px;
+  }
+  
+  .mb-20 {
+    margin-bottom: 20px;
+  }
+  
+  /* Checkbox styles */
+  .checkbox {
+    margin-bottom: 20px;
+  }
+  
+  .checkbox label {
+    display: flex;
+    align-items: center;
+  }
+  
+  .checkbox input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  /* Error and Success Messages */
+  .alert {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    color: #fff;
+  }
+  
+  .alert-error {
+    background-color: #ff3860;
+  }
+  
+  .alert-success {
+    background-color: #23d160;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .container {
+      width: 90%;
+    }
+  }
+  
