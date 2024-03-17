@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <title>Book Appointment - DR AI</title>
+</head>
+<body>
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li><a href="login.html">Dr AI</a></li>
+                <li><a href="login.html">Home</a></li>
+                <li><a href="chatbot.html">Chatbot</a></li>
+                <li><a href="app.html">Appointment</a></li>
+            </ul>
+        </nav>
+    <main class="container">
+        <div class="grid">
+            <section>
+                <h2>Book an Appointment</h2>
+                <form>
+                    <label for="appointmentDate">Date:</label>
+                    <input type="date" id="appointmentDate" name="appointmentDate" required>
+                    <label for="appointmentTime">Time:</label>
+                    <input type="time" id="appointmentTime" name="appointmentTime" required>
+                    <label for="doctorSelection">Select Doctor:</label>
+                    <select id="doctorSelection" name="doctorSelection">
+                        <option value="doctor1">Doctor 1</option>
+                        <option value="doctor2">Doctor 2</option>
+                        <!-- Add more options based on your requirement -->
+                    </select>
+                    <button type="submit">Book Appointment</button>
+                </form>
+            </section>
+        </div>
+    </main>
+</body>
+</html>

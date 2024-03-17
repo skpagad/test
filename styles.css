@@ -1,12 +1,56 @@
 /* Base styles for body */
+
 body {
-    font-family: Arial, sans-serif;
-    background-image:url("/Users/shrutikrishnapagadala/Desktop/test/bg_img.jpg");
-    color: #333;
+    font-family: "Comic Neue", cursive;
+    background-image: url('/Users/shrutikrishnapagadala/Desktop/test/boston-skyline.jpg'); /* Add your image path here */
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
     margin: 0;
     padding: 0;
+    border: 1px solid rgba(255, 255, 255, 0.92)
+}
+
+.navbar {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-around; /* or use 'flex-start' for left alignment */
+    margin: 0;
+    padding: 0;
+    background-color: rgba(255, 255, 255, 0.5); /* semi-transparent white background */
+}
+
+.nav-list li {
+    padding: 10px 20px; /* Adjust padding as needed */
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #000; /* Adjust text color as needed */
+    font-weight: bold;
+}
+
+/* Add additional styles as needed */
+
+
+
+/* Add a class for the logo to apply margin */
+.logo {
+    margin: 1px; /* Example margin, adjust as needed */
+}
+
+
+ 
+  div {
+    background-color: rgb(148, 209, 237);
+    
   }
   
+ 
   /* Container styles */
   .container {
     width: 100%;
@@ -17,22 +61,32 @@ body {
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
-  
-  /* Header styles */
-  .header {
-    text-align: center;
-    margin-bottom: 20px;
+
+  header {
+    /* color: rgb(148, 10, 10); */
+    text-align: left;
+    padding: 1rem;
+    /* background-color: rgba(255, 255, 255, 0.8); */
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.2px);
+    -webkit-backdrop-filter: blur(6.2px);
+    border: 1px solid rgba(255, 255, 255, 0.92);
   }
   
-  .header img {
-    max-width: 100px;
+  main {
+    padding: 1rem;
+    margin: 1rem;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.2px);
+    -webkit-backdrop-filter: blur(6.2px);
+    border: 1px solid rgba(255, 255, 255, 0.92);
   }
   
-  .header h1 {
-    font-size: 24px;
-    color: #000;
-    margin: 10px 0;
-  }
+
   
   /* Form styles */
   form {

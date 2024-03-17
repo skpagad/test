@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <title>Chat with DR AI</title>
+</head>
+<body>
+    
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li><a href="login.html">Dr AI</a></li>
+                <li><a href="login.html">Home</a></li>
+                <li><a href="chatbot.html">Chatbot</a></li>
+                <li><a href="app.html">Appointment</a></li>
+            </ul>
+        </nav>
+    
+    <main class="container">
+        <div class="grid">
+            <section>
+                <h2>Chat with DR AI</h2>
+                <p>Describe your symptoms and get recommendations.</p>
+                <!-- This is a placeholder for the chatbot interface -->
+                <div id="chatbot" style="border: 1px solid #ccc; height: 300px; padding: 10px; overflow-y: scroll;">
+                    <p>Welcome to DR AI chatbot. How can I assist you today?</p>
+                    <!-- Chat messages will go here -->
+                </div>
+                <input type="text" id="chatInput" placeholder="Type your message here..." style="width: calc(100% - 20px); margin-top: 10px;">
+                <button type="button" onclick="sendMessage()">Send</button>
+            </section>
+        </div>
+    </main>
+    <script>
+        function sendMessage() {
+            var message = document.getElementById('chatInput').value;
+            // Placeholder function for sending message
+            console.log('Sending message:', message);
+            // Add the message to the chat window
+            var chatWindow = document.getElementById('chatbot');
+            var userMessage = document.createElement('p');
+            userMessage.textContent = "You: " + message;
+            chatWindow.appendChild(userMessage);
+            // Clear the input
+            document.getElementById('chatInput').value = '';
+        }
+    </script>
+</body>
+</html>
